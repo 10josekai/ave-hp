@@ -1,24 +1,34 @@
-# build output
-dist/
-# generated types
-.astro/
-
-# dependencies
+# 依存関係
 node_modules/
 
-# logs
+# ビルド成果物
+dist/
+.output/
+.vercel/
+
+# Astro
+.astro/
+
+# 環境変数
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ログ
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
-# environment variables
-.env
-.env.production
-
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
-.idea/
+# キャッシュ
+.cache/
