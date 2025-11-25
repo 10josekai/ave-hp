@@ -5,12 +5,52 @@ import Header from '../components/Header.astro'
 
 <Layout>
 	<Header />
-  <div class="min-h-screen bg-zinc-50 flex items-center justify-center px-4">
+  <div class="min-h-screen bg-zinc-50 flex items-center justify-center px-4 pt-16">
+		<div class="text-center">
     <h1 class="text-6xl font-bold text-zinc-900 mb-4">
       経理業務を、シンプルに。
     </h1>
 		<p class="text-xl text-zinc-600">
 			沖縄の中小企業の成長を支える。
 		</p>
-  </div>
+	</div>
+</div>
+
+<!--サービス概要-->
+<section class="py-32 px-4 bg-zinc-100">
+	<div class="max-w-7xl mx-auto">
+		<h2 class="text-5xl font-bold text-zinc-900 mb-20">
+			サービス
+		</h2>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+			<!--サービス1: 記帳代行-->
+			<div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
+				<h3 class="text-2xl font-bold text-zinc-900 mb-6">記帳代行</h3>
+				<p class="text-zinc-600 leading-relaxed">
+					日々の取引記録を記帳。経営者の負担を軽減します。
+				</p>
+			</div>
+
+			<!--サービス2: 給与計算-->
+			<div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
+				<h3 class="text-2xl font-bold text-zinc-900 mb-6">給与計算</h3>
+				<p class="text-zinc-600 leading-relaxed">
+					従業員の給与計算から社会保険手続きまで対応します
+				</p>
+			</div>
+
+			<!--サービス3: 決算サポート-->
+			<div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
+				<h3 class="text-2xl font-bold text-zinc-900 mb-6">決算サポート</h3>
+				<p class="text-zinc-600 leading-relaxed">
+					年次決算書の作成をサポート。税務申告もスムーズに。
+				</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+
 </Layout>
