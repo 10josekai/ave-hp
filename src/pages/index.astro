@@ -1,16 +1,16 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<Header />
+  <div class="min-h-screen bg-zinc-50 flex items-center justify-center px-4">
+    <h1 class="text-6xl font-bold text-zinc-900 mb-4">
+      経理業務を、シンプルに。
+    </h1>
+		<p class="text-xl text-zinc-600">
+			沖縄の中小企業の成長を支える。
+		</p>
+  </div>
+</Layout>
