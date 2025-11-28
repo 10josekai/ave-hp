@@ -4,53 +4,120 @@ import Header from '../components/Header.astro'
 ---
 
 <Layout>
-	<Header />
+  <Header />
+
+  <!-- ヒーロー -->
   <div class="min-h-screen bg-zinc-50 flex items-center justify-center px-4 pt-16">
-		<div class="text-center">
-    <h1 class="text-6xl font-bold text-zinc-900 mb-4">
-      経理業務を、シンプルに。
-    </h1>
-		<p class="text-xl text-zinc-600">
-			沖縄の中小企業の成長を支える。
-		</p>
-	</div>
-</div>
+    <div class="text-center">
+      <h1 class="text-6xl font-bold text-zinc-900 mb-4">
+        経理業務を、シンプルに。
+      </h1>
+      <p class="text-xl text-zinc-600">
+        沖縄の中小企業の成長を支える。
+      </p>
+    </div>
+  </div>
 
-<!--サービス概要-->
-<section class="py-32 px-4 bg-zinc-100">
-	<div class="max-w-7xl mx-auto">
-		<h2 class="text-5xl font-bold text-zinc-900 mb-20">
-			サービス
-		</h2>
+  <!-- サービス概要 -->
+  <section class="py-32 px-4 bg-zinc-100">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-5xl font-bold text-zinc-900 mb-20">
+        サービス
+      </h2>
 
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
+          <h3 class="text-2xl font-bold text-zinc-900 mb-6">記帳代行</h3>
+          <p class="text-zinc-600 leading-relaxed">
+            日々の取引記録を記帳。経営者の負担を軽減します。
+          </p>
+        </div>
 
-			<!--サービス1: 記帳代行-->
-			<div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
-				<h3 class="text-2xl font-bold text-zinc-900 mb-6">記帳代行</h3>
-				<p class="text-zinc-600 leading-relaxed">
-					日々の取引記録を記帳。経営者の負担を軽減します。
-				</p>
-			</div>
+        <div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
+          <h3 class="text-2xl font-bold text-zinc-900 mb-6">給与計算</h3>
+          <p class="text-zinc-600 leading-relaxed">
+            従業員の給与計算から社会保険手続きまで対応します
+          </p>
+        </div>
 
-			<!--サービス2: 給与計算-->
-			<div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
-				<h3 class="text-2xl font-bold text-zinc-900 mb-6">給与計算</h3>
-				<p class="text-zinc-600 leading-relaxed">
-					従業員の給与計算から社会保険手続きまで対応します
-				</p>
-			</div>
+        <div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
+          <h3 class="text-2xl font-bold text-zinc-900 mb-6">決算サポート</h3>
+          <p class="text-zinc-600 leading-relaxed">
+            年次決算書の作成をサポート。税務申告もスムーズに。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<!--サービス3: 決算サポート-->
-			<div class="bg-zinc-50 p-12 transition-transform hover:-translate-y-2">
-				<h3 class="text-2xl font-bold text-zinc-900 mb-6">決算サポート</h3>
-				<p class="text-zinc-600 leading-relaxed">
-					年次決算書の作成をサポート。税務申告もスムーズに。
-				</p>
-			</div>
+  <!-- 選ばれる理由 -->
+  <section class="py-32 px-4 bg-zinc-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-5xl font-bold text-zinc-900 mb-20">
+        選ばれる理由
+      </h2>
 
-		</div>
-	</div>
-</section>
+      <div class="space-y-16">
+        <div>
+          <h3 class="text-2xl font-bold text-zinc-900 mb-4">地域密着型のサポート</h3>
+          <p class="text-lg text-zinc-600 leading-relaxed">
+            沖縄の中小企業に特化したきめ細かいサービスを提供。地域の商習慣を理解したサポートで安心です。
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-zinc-900 mb-4">柔軟な対応力</h3>
+          <p class="text-lg text-zinc-600 leading-relaxed">
+            企業ごとの課題に合わせた柔軟なサービス提供。小規模から中規模企業まで幅広く対応します。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-32 px-4 bg-zinc-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-zinc-50 mb-8">
+        まずはお気軽にご相談ください
+      </h2>
+      <a href="/contact" class="inline-block px-8 py-4 bg-zinc-50 text-zinc-900 font-bold">
+        お問い合わせ
+      </a>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="py-16 px-4 bg-zinc-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <h3 class="text-lg font-bold text-zinc-900 mb-4">株式会社アベンジャーズ</h3>
+          <p class="text-sm text-zinc-600">
+            沖縄県那覇市<br>
+            経理代行・給与計算・決算サポート
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold text-zinc-900 mb-4">メニュー</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="text-zinc-600">トップ</a></li>
+            <li><a href="/services" class="text-zinc-600">サービス</a></li>
+            <li><a href="/about" class="text-zinc-600">会社概要</a></li>
+            <li><a href="/contact" class="text-zinc-600">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div></div>
+      </div>
+
+      <div class="border-t border-zinc-300 pt-8">
+        <p class="text-sm text-zinc-600 text-center">
+          © 2025 株式会社アベンジャーズ
+        </p>
+      </div>
+    </div>
+  </footer>
 
 </Layout>
