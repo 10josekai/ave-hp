@@ -1,1 +1,64 @@
 @import "tailwindcss";
+/* 浮遊するオーブのアニメーション */
+.floating-orb-1 {
+  top: 20%;
+  left: 10%;
+  animation: float-up-1 20s ease-in-out infinite;
+}
+
+.floating-orb-2 {
+  top: 60%;
+  right: 15%;
+  animation: float-up-2 25s ease-in-out infinite;
+}
+
+.floating-orb-3 {
+  top: 40%;
+  left: 50%;
+  animation: float-up-3 30s ease-in-out infinite;
+}
+
+@keyframes float-up-1 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(50px, -100vh) scale(1.2);
+  }
+}
+
+@keyframes float-up-2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, -100vh) scale(0.9);
+  }
+}
+
+@keyframes float-up-3 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(20px, -100vh) scale(1.1);
+  }
+}
+
+/* 回転するテキスト */
+.rotating-text {
+  animation: rotate-slow 60s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotate-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
